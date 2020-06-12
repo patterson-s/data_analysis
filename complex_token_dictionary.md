@@ -80,7 +80,7 @@ pre_dtm %>% print(n = 1e2)
 ``` r
 token_remove %>%
   arrange(.,desc(defensive_15)) %>%
-  print (n = 25)
+  print (n = 20)
 ```
 
     ## # A tibble: 7,507 x 11
@@ -106,10 +106,101 @@ token_remove %>%
     ## 18 AFG_3~    11 behalf d~ behalf~            0 behalf~            0 behalf~
     ## 19 AFG_3~    12 behalf d~ behalf~            0 behalf~            0 behalf~
     ## 20 AFG_3~    13 66 outse~ 66 out~            0 66 out~            0 66 out~
-    ## 21 AFG_3~    14 begin st~ begin ~            0 begin ~            0 begin ~
-    ## 22 AFG_4~    15 outset c~ outset~            0 outset~            0 outset~
-    ## 23 AFG_4~    16 begin st~ begin ~            0 begin ~            0 begin ~
-    ## 24 AFG_4~    17 behalf d~ behalf~            0 behalf~            0 behalf~
-    ## 25 AFG_4~    18 pleasure~ pleasu~            0 pleasu~            0 pleasu~
-    ## # ... with 7,482 more rows, and 3 more variables: defensive_13 <int>,
+    ## # ... with 7,487 more rows, and 3 more variables: defensive_13 <int>,
+    ## #   text_12 <chr>, defensive_12 <int>
+
+``` r
+token_remove %>%
+  arrange(.,desc(defensive_14)) %>%
+  print (n = 20)
+```
+
+    ## # A tibble: 7,507 x 11
+    ##    doc_id index text_base text_15 defensive_15 text_14 defensive_14 text_13
+    ##    <chr>  <dbl> <chr>     <chr>          <int> <chr>          <int> <chr>  
+    ##  1 ARG_2~   198 presiden~ presid~            0 presid~          107 presid~
+    ##  2 AUT_2~   345 112 pres~ 112 pr~            0 112 pr~          107 112 pr~
+    ##  3 BLR_2~   787 114 cont~ 114 co~            0 114 co~          107 114 co~
+    ##  4 CAN_2~  1156 48 offer~ 48 off~            0 48 off~          107 48 off~
+    ##  5 CUB_3~  1666 233 pres~ 233 pr~            0 233 pr~          107 233 pr~
+    ##  6 DZA_4~  2000 pleasure~ pleasu~            0 pleasu~          107 pleasu~
+    ##  7 IRL_2~  3155 116 sir ~ 116 si~            0 116 si~          107 116 si~
+    ##  8 LKA_2~  4049 happy op~ happy ~            0 happy ~          107 happy ~
+    ##  9 MNG_2~  4635 36 presi~ 36 pre~            0 36 pre~          107 36 pre~
+    ## 10 NOR_2~  5096 113 pres~ 113 pr~            0 113 pr~          107 113 pr~
+    ## 11 NPL_2~  5140 68 presi~ 68 pre~            0 68 pre~          107 68 pre~
+    ## 12 RWA_2~  5842 presiden~ presid~            0 presid~          107 presid~
+    ## 13 AFG_2~     1 82 presi~ 82 pre~            0 82 pre~            0 82 pre~
+    ## 14 AFG_2~     2 presiden~ presid~            0 presid~            0 presid~
+    ## 15 AFG_2~     3 1 pleasu~ 1 plea~            0 1 plea~            0 1 plea~
+    ## 16 AFG_2~     4 presiden~ presid~            0 presid~            0 presid~
+    ## 17 AFG_3~     5 114 pres~ 114 pr~            0 114 pr~            0 114 pr~
+    ## 18 AFG_3~     6 pleasure~ pleasu~            0 pleasu~            0 pleasu~
+    ## 19 AFG_3~     7 212 beha~ 212 be~            0 212 be~            0 212 be~
+    ## 20 AFG_3~     8 1 act ad~ 1 act ~            0 1 act ~            0 1 act ~
+    ## # ... with 7,487 more rows, and 3 more variables: defensive_13 <int>,
+    ## #   text_12 <chr>, defensive_12 <int>
+
+``` r
+token_remove %>%
+  arrange(.,desc(defensive_13)) %>%
+  print (n = 20)
+```
+
+    ## # A tibble: 7,507 x 11
+    ##    doc_id index text_base text_15 defensive_15 text_14 defensive_14 text_13
+    ##    <chr>  <dbl> <chr>     <chr>          <int> <chr>          <int> <chr>  
+    ##  1 BHS_4~   739 twenty a~ twenty~            0 twenty~            0 twenty~
+    ##  2 DNK_4~  1912 begin co~ begin ~            0 begin ~            0 begin ~
+    ##  3 IRN_5~  3225 outset c~ outset~            0 outset~            0 outset~
+    ##  4 SLE_4~  6111 pleasure~ pleasu~            0 pleasu~            0 pleasu~
+    ##  5 YUG_6~  7402 honour a~ honour~            0 honour~            0 honour~
+    ##  6 COG_4~  1442 drawing ~ drawin~            0 drawin~            0 drawin~
+    ##  7 GUY_4~  2880 meeting ~ meetin~            0 meetin~            0 meetin~
+    ##  8 OMN_4~  5264 outset o~ outset~            0 outset~            0 outset~
+    ##  9 RWA_4~  5859 behalf r~ behalf~            0 behalf~            0 behalf~
+    ## 10 VEN_4~  7178 presiden~ presid~            0 presid~            0 presid~
+    ## 11 FJI_6~  2335 fiji ext~ fiji e~            0 fiji e~            0 fiji e~
+    ## 12 MCO_5~  4281 congratu~ congra~            0 congra~            0 congra~
+    ## 13 PRY_5~  5671 begin pe~ begin ~            0 begin ~            0 begin ~
+    ## 14 SMR_5~  6191 outset e~ outset~            0 outset~            0 outset~
+    ## 15 AFG_2~     1 82 presi~ 82 pre~            0 82 pre~            0 82 pre~
+    ## 16 AFG_2~     2 presiden~ presid~            0 presid~            0 presid~
+    ## 17 AFG_2~     3 1 pleasu~ 1 plea~            0 1 plea~            0 1 plea~
+    ## 18 AFG_2~     4 presiden~ presid~            0 presid~            0 presid~
+    ## 19 AFG_3~     5 114 pres~ 114 pr~            0 114 pr~            0 114 pr~
+    ## 20 AFG_3~     6 pleasure~ pleasu~            0 pleasu~            0 pleasu~
+    ## # ... with 7,487 more rows, and 3 more variables: defensive_13 <int>,
+    ## #   text_12 <chr>, defensive_12 <int>
+
+``` r
+token_remove %>%
+  arrange(.,desc(defensive_12)) %>%
+  print (n = 20)
+```
+
+    ## # A tibble: 7,507 x 11
+    ##    doc_id index text_base text_15 defensive_15 text_14 defensive_14 text_13
+    ##    <chr>  <dbl> <chr>     <chr>          <int> <chr>          <int> <chr>  
+    ##  1 GTM_5~  2844 congratu~ congra~            0 congra~            0 congra~
+    ##  2 ESP_5~  2162 outset c~ outset~            0 outset~            0 outset~
+    ##  3 ESP_5~  2164 outset i~ outset~            0 outset~            0 outset~
+    ##  4 GTM_5~  2843 pleasant~ pleasa~            0 pleasa~            0 pleasa~
+    ##  5 GTM_6~  2856 honour r~ honour~            0 honour~            0 honour~
+    ##  6 BTN_2~  1032 behalf m~ behalf~            0 behalf~            0 behalf~
+    ##  7 GRD_3~  2783 ctoday h~ ctoday~            0 ctoday~            0 ctoday~
+    ##  8 IRQ_2~  3247 52 presi~ 52 pre~            0 52 pre~            0 52 pre~
+    ##  9 ISL_2~  3293 80 presi~ 80 pre~            0 80 pre~            0 80 pre~
+    ## 10 KEN_3~  3596 presiden~ presid~            0 presid~            0 presid~
+    ## 11 KWT_2~  3773 presiden~ presid~            0 presid~            0 presid~
+    ## 12 KWT_3~  3774 129 plea~ 129 pl~            0 129 pl~            0 129 pl~
+    ## 13 LKA_2~  4049 happy op~ happy ~            0 happy ~          107 happy ~
+    ## 14 MAR_3~  4238 presiden~ presid~            0 presid~            0 presid~
+    ## 15 MLT_2~  4540 presiden~ presid~            0 presid~            0 presid~
+    ## 16 MYS_2~  4846 1 presid~ 1 pres~            0 1 pres~            0 1 pres~
+    ## 17 SEN_2~  5968 149 dele~ 149 de~            0 149 de~            0 149 de~
+    ## 18 SLV_2~  6134 83 presi~ 83 pre~            0 83 pre~            0 83 pre~
+    ## 19 SUR_3~  6279 task pre~ task p~            0 task p~            0 task p~
+    ## 20 TTO_3~  6724 142 plea~ 142 pl~            0 142 pl~            0 142 pl~
+    ## # ... with 7,487 more rows, and 3 more variables: defensive_13 <int>,
     ## #   text_12 <chr>, defensive_12 <int>

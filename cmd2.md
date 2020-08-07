@@ -1,7 +1,9 @@
+conceptmover2
+================
+
 \#library
 
-CMD
-===
+# CMD
 
 `ungdc_unnest` is a base form that can be used to compute CMD for any
 word
@@ -9,8 +11,7 @@ word
 Concepts: socioeconomic inequality - from Piketty urgent v. long-term
 economy - Doty, Imperial Encounters
 
-CMD Plots: Conceptual engagement in 2 dimensions over time.
-===========================================================
+# CMD Plots: Conceptual engagement in 2 dimensions over time.
 
 CMD is a measure for conceptual engagement at the document level.
 Positive values indicate document engagement with the specified concept
@@ -32,7 +33,7 @@ cmd1 <-  cmd_frame %>%
 cmd1
 ```
 
-![](cmd2_files/figure-markdown_github/unnamed-chunk-2-1.png)
+![](cmd2_files/figure-gfm/unnamed-chunk-2-1.png)<!-- -->
 
 ``` r
 # socioeconomic x long-term ----
@@ -48,7 +49,7 @@ cmd2 <- cmd_frame %>%
 cmd2
 ```
 
-![](cmd2_files/figure-markdown_github/unnamed-chunk-2-2.png)
+![](cmd2_files/figure-gfm/unnamed-chunk-2-2.png)<!-- -->
 
 ``` r
 ## Latin America
@@ -63,7 +64,7 @@ cmd3 <- cmd_frame %>%
 cmd3
 ```
 
-![](cmd2_files/figure-markdown_github/unnamed-chunk-2-3.png)
+![](cmd2_files/figure-gfm/unnamed-chunk-2-3.png)<!-- -->
 
 ``` r
 ## WEOG
@@ -78,7 +79,7 @@ cmd4 <- cmd_frame %>%
 cmd4
 ```
 
-![](cmd2_files/figure-markdown_github/unnamed-chunk-2-4.png)
+![](cmd2_files/figure-gfm/unnamed-chunk-2-4.png)<!-- -->
 
 ``` r
 ## NAM
@@ -94,7 +95,7 @@ cmd5 <-  cmd_frame %>%
 cmd5
 ```
 
-![](cmd2_files/figure-markdown_github/unnamed-chunk-2-5.png)
+![](cmd2_files/figure-gfm/unnamed-chunk-2-5.png)<!-- -->
 
 ``` r
 # socioeconomic x poverty ----
@@ -109,7 +110,7 @@ cmd6 <- cmd_frame %>%
 cmd6
 ```
 
-![](cmd2_files/figure-markdown_github/unnamed-chunk-2-6.png)
+![](cmd2_files/figure-gfm/unnamed-chunk-2-6.png)<!-- -->
 
 ``` r
 # socioeconomic x exploitation ----
@@ -124,7 +125,7 @@ cmd7 <- cmd_frame %>%
 cmd7
 ```
 
-![](cmd2_files/figure-markdown_github/unnamed-chunk-2-7.png)
+![](cmd2_files/figure-gfm/unnamed-chunk-2-7.png)<!-- -->
 
 ``` r
 # 
@@ -140,7 +141,7 @@ cmd8 <- cmd_frame %>%
 cmd8
 ```
 
-![](cmd2_files/figure-markdown_github/unnamed-chunk-2-8.png)
+![](cmd2_files/figure-gfm/unnamed-chunk-2-8.png)<!-- -->
 
 ``` r
 # 
@@ -155,10 +156,9 @@ cmd9 <- cmd_frame[ which(cmd_frame$UN_REGION == "WEOG" | cmd_frame$UN_REGION == 
 cmd9
 ```
 
-![](cmd2_files/figure-markdown_github/unnamed-chunk-2-9.png)
+![](cmd2_files/figure-gfm/unnamed-chunk-2-9.png)<!-- -->
 
-CMD Time series
-===============
+# CMD Time series
 
 ``` r
 # Socioeconomic Inequality by UN_REGION ----
@@ -172,7 +172,7 @@ cmd10
 
     ## `geom_smooth()` using method = 'gam' and formula 'y ~ s(x, bs = "cs")'
 
-![](cmd2_files/figure-markdown_github/unnamed-chunk-3-1.png)
+![](cmd2_files/figure-gfm/unnamed-chunk-3-1.png)<!-- -->
 
 ``` r
 # Socioeconomic Inequality by NAM ----
@@ -186,7 +186,7 @@ cmd11
 
     ## `geom_smooth()` using method = 'gam' and formula 'y ~ s(x, bs = "cs")'
 
-![](cmd2_files/figure-markdown_github/unnamed-chunk-3-2.png)
+![](cmd2_files/figure-gfm/unnamed-chunk-3-2.png)<!-- -->
 
 ``` r
 # Socioeconomic Inequality by g77 ----
@@ -200,7 +200,7 @@ cmd12
 
     ## `geom_smooth()` using method = 'gam' and formula 'y ~ s(x, bs = "cs")'
 
-![](cmd2_files/figure-markdown_github/unnamed-chunk-3-3.png)
+![](cmd2_files/figure-gfm/unnamed-chunk-3-3.png)<!-- -->
 
 ``` r
 # Comparison
@@ -216,7 +216,7 @@ cmd13
     ## `geom_smooth()` using method = 'gam' and formula 'y ~ s(x, bs = "cs")'
     ## `geom_smooth()` using method = 'gam' and formula 'y ~ s(x, bs = "cs")'
 
-![](cmd2_files/figure-markdown_github/unnamed-chunk-3-4.png)
+![](cmd2_files/figure-gfm/unnamed-chunk-3-4.png)<!-- -->
 
 ``` r
 # Foresight ----
@@ -232,7 +232,7 @@ cmd14
 
     ## `geom_smooth()` using method = 'gam' and formula 'y ~ s(x, bs = "cs")'
 
-![](cmd2_files/figure-markdown_github/unnamed-chunk-3-5.png)
+![](cmd2_files/figure-gfm/unnamed-chunk-3-5.png)<!-- -->
 
 ``` r
 # 
@@ -248,7 +248,7 @@ cmd15
 
     ## `geom_smooth()` using method = 'gam' and formula 'y ~ s(x, bs = "cs")'
 
-![](cmd2_files/figure-markdown_github/unnamed-chunk-3-6.png)
+![](cmd2_files/figure-gfm/unnamed-chunk-3-6.png)<!-- -->
 
 ``` r
 # Hindsight ----
@@ -263,7 +263,7 @@ cmd16
 
     ## `geom_smooth()` using method = 'gam' and formula 'y ~ s(x, bs = "cs")'
 
-![](cmd2_files/figure-markdown_github/unnamed-chunk-3-7.png)
+![](cmd2_files/figure-gfm/unnamed-chunk-3-7.png)<!-- -->
 
 ``` r
 cmd17 <- cmd_frame %>%
@@ -277,7 +277,7 @@ cmd17
 
     ## `geom_smooth()` using method = 'gam' and formula 'y ~ s(x, bs = "cs")'
 
-![](cmd2_files/figure-markdown_github/unnamed-chunk-3-8.png)
+![](cmd2_files/figure-gfm/unnamed-chunk-3-8.png)<!-- -->
 
 ``` r
 # Poverty ----
@@ -292,7 +292,7 @@ cmd18 <- cmd_frame %>%
 
     ## `geom_smooth()` using method = 'gam' and formula 'y ~ s(x, bs = "cs")'
 
-![](cmd2_files/figure-markdown_github/unnamed-chunk-3-9.png)
+![](cmd2_files/figure-gfm/unnamed-chunk-3-9.png)<!-- -->
 
 ``` r
  # Exploitation ----
@@ -307,7 +307,7 @@ cmd19
 
     ## `geom_smooth()` using method = 'gam' and formula 'y ~ s(x, bs = "cs")'
 
-![](cmd2_files/figure-markdown_github/unnamed-chunk-3-10.png)
+![](cmd2_files/figure-gfm/unnamed-chunk-3-10.png)<!-- -->
 
 ``` r
 # Modernity ----
@@ -323,4 +323,4 @@ cmd20
 
     ## `geom_smooth()` using method = 'gam' and formula 'y ~ s(x, bs = "cs")'
 
-![](cmd2_files/figure-markdown_github/unnamed-chunk-3-11.png)
+![](cmd2_files/figure-gfm/unnamed-chunk-3-11.png)<!-- -->
